@@ -27,7 +27,50 @@
 </header>
 
 <section class="page-title">
-    <h2>В розроботці</h2>
-    <p>-</p>
+    <h2>Корисна інформація</h2>
+    <p>Уся важлива інформація про сервер Південна Україна</p>
 </section>
 
+<div class="info-container">
+
+    <!-- Блок 1 -->
+    <div class="info-card">
+        <h3>Кількість продукції, яку може перевозити кожен вид фур</h3>
+        <p>Тут буде таблиця з усіма видами фур та максимальною кількістю вантажу.</p>
+        <button class="btn">Заповнити пізніше</button>
+    </div>
+
+    <!-- Блок 2 -->
+    <div class="info-card">
+        <h3>Транспорт</h3>
+        <p>У цьому розділі будуть характеристики транспорту, швидкість, вантажопідйомність та інше.</p>
+        <button class="btn">Заповнити пізніше</button>
+    </div>
+
+    <!-- Блок 3 -->
+    <div class="info-card">
+        <h3>Фракції</h3>
+        <p>Будуть додані всі фракції, їх ранги, повноваження та актуальна зарплата.</p>
+        <button class="btn">Заповнити пізніше</button>
+    </div>
+
+    <!-- Блок 4 -->
+    <div class="info-card">
+        <h3>Роботи</h3>
+        <p>Опис усіх робіт, їх прибуток, плюси/мінуси та вимоги.</p>
+        <button class="btn">Заповнити пізніше</button>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+<script>
+document.querySelectorAll('.accordion-header').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const item = btn.parentElement;
+        item.classList.toggle('active');
+    });
+});
+</script>
